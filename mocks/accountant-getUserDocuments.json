@@ -1,0 +1,24 @@
+{
+  "accountantUsername": "accountant_jane",
+  "clientUsername": "client_john",
+  "sharedDocuments": [
+    {
+      "documentId": "doc001",      
+      "uploadDate": "2023-11-07T10:00:00Z",
+      "title": "Income Statement",
+      "description": "Income statement for 2023 Q1."
+    },
+    {
+      "documentId": "doc002",      
+      "uploadDate": "2023-11-07T11:20:00Z",
+      "title": "Bank Statement",
+      "description": "Bank statement for March 2023."
+    },
+    {
+      "documentId": "doc004",      
+      "uploadDate": "2023-11-07T13:15:00Z",
+      "title": "Rental Agreement",
+      "description": "Rental agreement for office space."
+    }
+  ]
+}

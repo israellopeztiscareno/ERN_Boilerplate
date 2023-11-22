@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <link rel="icon" href="/static/favicon.ico" type="image/x-icon" />
+    <link rel="manifest" href="/static/manifest.json" />
+    <link rel="stylesheet" type="text/css" href="<%= assets.main.css %>" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <div id="root"><%- content %></div>
+    <script>
+      // WARNING: See the following for security issues around embedding JSON in HTML:
+      // https://redux.js.org/usage/server-rendering#security-considerations
+      window.__PRELOADED_STATE__ = <%- JSON.stringify(injectedPreloadState).replace(/</g, '\\u003c') %>
+    </script>
+    <script async type="text/javascript" src="<%= assets.main.js %>"></script>
+  </body>
+</html>
