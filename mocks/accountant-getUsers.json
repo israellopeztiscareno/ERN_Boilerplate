@@ -1,0 +1,40 @@
+{
+  "accountantUsername": "accountant_jane",
+  "linkedUsers": [
+    {
+      "username": "client_john",
+      "firstName": "John",
+      "lastName": "Doe",
+      "email": "john.doe@example.com",      
+      "creationDate": "2023-11-07T14:22:00Z"
+    },
+    {
+      "username": "client_emily",
+      "firstName": "Emily",
+      "lastName": "Stone",
+      "email": "emily.stone@example.com",      
+      "creationDate": "2023-10-15T09:33:00Z"
+    },
+    {
+      "username": "client_michael",
+      "firstName": "Michael",
+      "lastName": "Brown",
+      "email": "michael.brown@example.com",      
+      "creationDate": "2023-09-20T11:47:00Z"
+    },
+    {
+      "username": "client_anna",
+      "firstName": "Anna",
+      "lastName": "Davis",
+      "email": "anna.davis@example.com",      
+      "creationDate": "2023-08-04T13:55:00Z"
+    },
+    {
+      "username": "client_greg",
+      "firstName": "Greg",
+      "lastName": "Wilson",
+      "email": "greg.wilson@example.com",      
+      "creationDate": "2023-07-22T10:22:00Z"
+    }
+  ]
+}

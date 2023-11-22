@@ -1,0 +1,45 @@
+{
+  "username": "client_john",
+  "documents": [
+    {
+      "documentId": "doc001",      
+      "uploadDate": "2023-11-07T10:00:00Z",
+      "title": "Income Statement",
+      "description": "Income statement for 2023 Q1.",
+      "tags": ["income", "Q1", "2023"],
+      "sharedWithAccountant": true
+    },
+    {
+      "documentId": "doc002",      
+      "uploadDate": "2023-11-07T11:20:00Z",
+      "title": "Bank Statement",
+      "description": "Bank statement for March 2023.",
+      "tags": ["bank", "statement", "2023"],
+      "sharedWithAccountant": true
+    },
+    {
+      "documentId": "doc003",
+      "uploadDate": "2023-11-07T12:45:00Z",
+      "title": "Utility Bill",
+      "description": "Electricity bill for April 2023.",
+      "tags": ["utility", "bill", "electricity"],
+      "sharedWithAccountant": false
+    },
+    {
+      "documentId": "doc004",      
+      "uploadDate": "2023-11-07T13:15:00Z",
+      "title": "Rental Agreement",
+      "description": "Rental agreement for office space.",
+      "tags": ["rental", "agreement", "office"],
+      "sharedWithAccountant": true
+    },
+    {
+      "documentId": "doc005",      
+      "uploadDate": "2023-11-07T14:05:00Z",
+      "title": "Insurance Policy",
+      "description": "Health insurance policy details.",
+      "tags": ["insurance", "health", "policy"],
+      "sharedWithAccountant": false
+    }
+  ]
+}

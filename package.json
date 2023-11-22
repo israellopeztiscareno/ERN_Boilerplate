@@ -1,0 +1,141 @@
+{
+  "name": "ern-boilerplate",
+  "version": "0.1.0",
+  "engines": {
+    "node": ">=18.18.2 <=21.2.0"
+  },
+  "private": true,
+  "bin": {
+    "create-iw-frontend-starter-project": "./bin/index.js"
+  },
+  "keywords": [
+    "react",
+    "express",
+    "passport",
+    "express-session",
+    "bootstrap"
+  ],
+  "author": "Israel López Tiscareño <israel.lopez@interware.com.mx> (https://github.com/israellopeztiscareno)",
+  "scripts": {
+    "start:develop": "node scripts/develop",
+    "clean": "rm -rf dist",
+    "build": "npm run clean && npm run build:webapp && npm run build:server",
+    "build:webapp": "webpack --config webpack/webpack.client.prod.js",
+    "build:server": "webpack --config webpack/webpack.server.js --env production",
+    "test": "jest --config jest/jest.config.js",
+    "test:watch": "jest --config jest/jest.config.js --watchAll",
+    "test:coverage": "jest --config jest/jest.config.js --coverage",
+    "start": "node dist/server.js"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "^1.9.7",
+    "@tanstack/react-table": "^8.10.7",
+    "axios": "^1.6.0",
+    "bootstrap": "^5.3.2",
+    "bootstrap-icons": "^1.11.1",
+    "clsx": "^2.0.0",
+    "compression": "^1.7.4",
+    "cookie-parser": "^1.4.6",
+    "cookie-session": "^2.0.0",
+    "cors": "^2.8.5",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "express-http-proxy": "^2.0.0",
+    "express-session": "^1.17.3",
+    "form-data": "^4.0.0",
+    "formik": "^2.4.5",
+    "install": "^0.13.0",
+    "js-base64": "^3.7.5",
+    "multer": "^1.4.5-lts.1",
+    "passport": "^0.6.0",
+    "passport-jwt": "^4.0.1",
+    "passport-local": "^1.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-helmet": "^6.1.0",
+    "react-redux": "^8.1.3",
+    "react-router-dom": "^6.17.0",
+    "react-tabs": "^6.0.2",
+    "winston": "^3.11.0",
+    "yup": "^1.3.2"
+  },
+  "devDependencies": {
+    "@babel/eslint-parser": "^7.12.13",
+    "@babel/plugin-proposal-class-properties": "^7.13.0",
+    "@babel/preset-env": "^7.14.4",
+    "@babel/preset-react": "^7.13.13",
+    "@babel/preset-typescript": "^7.13.0",
+    "@commitlint/cli": "^18.4.2",
+    "@commitlint/config-conventional": "^18.4.2",
+    "@jest/globals": "^29.7.0",
+    "@testing-library/jest-dom": "^6.1.4",
+    "@testing-library/react": "^14.0.0",
+    "@testing-library/user-event": "^14.5.1",
+    "@types/express": "^4.17.20",
+    "@types/jest": "^29.5.7",
+    "@types/passport": "^1.0.14",
+    "@types/react": "^18.2.32",
+    "@types/react-dom": "^18.2.14",
+    "@types/react-router-dom": "^5.3.3",
+    "@types/webpack": "^5.28.0",
+    "@types/webpack-dev-middleware": "^4.3.0",
+    "@types/webpack-env": "^1.18.3",
+    "assets-webpack-plugin": "^7.1.1",
+    "autoprefixer": "^10.4.16",
+    "axios-mock-adapter": "^1.22.0",
+    "babel-jest": "^29.7.0",
+    "babel-loader": "^8.2.2",
+    "compression-webpack-plugin": "^10.0.0",
+    "copy-webpack-plugin": "^11.0.0",
+    "css-loader": "^6.8.1",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^8.52.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
+    "eslint-plugin-prettier": "^5.0.1",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-testing-library": "^6.1.0",
+    "ignore-loader": "^0.1.2",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
+    "mini-css-extract-plugin": "^2.7.6",
+    "nodemon": "^2.0.7",
+    "postcss-loader": "^7.3.3",
+    "prettier": "^3.0.3",
+    "sass": "^1.69.5",
+    "sass-loader": "^13.3.2",
+    "style-loader": "^3.3.3",
+    "terser-webpack-plugin": "^5.1.2",
+    "ts-loader": "^9.5.0",
+    "typescript": "^5.2.2",
+    "webpack": "^5.89.0",
+    "webpack-cli": "^4.7.0",
+    "webpack-dev-server": "^4.8.1",
+    "webpack-merge": "^5.10.0",
+    "webpack-node-externals": "^3.0.0"
+  }
+}
