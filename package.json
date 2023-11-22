@@ -5,9 +5,6 @@
     "node": ">=18.18.2 <=21.2.0"
   },
   "private": true,
-  "bin": {
-    "create-iw-frontend-starter-project": "./bin/index.js"
-  },
   "keywords": [
     "react",
     "express",
@@ -16,6 +13,7 @@
     "bootstrap"
   ],
   "author": "Israel López Tiscareño <israel.lopez@interware.com.mx> (https://github.com/israellopeztiscareno)",
+  "license": "MIT",
   "scripts": {
     "start:develop": "node scripts/develop",
     "clean": "rm -rf dist",
